@@ -28,7 +28,11 @@ export default function LandingPage() {
         <div className="container header-container">
           <div className="logo-container">
             <a href="/" className="logo-link">
-              <img src="images/logo.png" alt="HomeSync Logo" className="logo-icon" />
+              <img
+                src="images/logo.png"
+                alt="HomeSync Logo"
+                className="logo-icon"
+              />
               <span className="logo-text">HomeSync</span>
             </a>
           </div>
@@ -47,17 +51,27 @@ export default function LandingPage() {
           </nav>
 
           <div className="desktop-actions">
-            <a href="/login" className="login-link">
+            <a href="https://home-sync-pi.vercel.app/" className="login-link">
               Log in
             </a>
-            <a href="/signup" className="button tertiary-button">
+            <a
+              href="https://home-sync-pi.vercel.app/"
+              className="button tertiary-button"
+            >
               Sign Up
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="mobile-menu-button" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            {mobileMenuOpen ? <X className="menu-icon" /> : <Menu className="menu-icon" />}
+          <button
+            className="mobile-menu-button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="menu-icon" />
+            ) : (
+              <Menu className="menu-icon" />
+            )}
           </button>
         </div>
 
@@ -65,20 +79,40 @@ export default function LandingPage() {
         {mobileMenuOpen && (
           <div className="mobile-nav-container">
             <nav className="mobile-nav">
-              <a href="#features" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+              <a
+                href="#features"
+                className="mobile-nav-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Features
               </a>
-              <a href="#how-it-works" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+              <a
+                href="#how-it-works"
+                className="mobile-nav-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 How It Works
               </a>
-              <a href="#contact" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+              <a
+                href="#contact"
+                className="mobile-nav-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Contact
               </a>
               <div className="mobile-actions">
-                <a href="/login" className="mobile-login-link" onClick={() => setMobileMenuOpen(false)}>
+                <a
+                  href="https://home-sync-pi.vercel.app/"
+                  className="mobile-login-link"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Log in
                 </a>
-                <a href="/signup" className="button tertiary-button" onClick={() => setMobileMenuOpen(false)}>
+                <a
+                  href="https://home-sync-pi.vercel.app/"
+                  className="button tertiary-button"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Sign Up
                 </a>
               </div>
@@ -94,13 +128,19 @@ export default function LandingPage() {
             <div className="hero-grid">
               <div className="hero-content">
                 <div className="hero-text">
-                  <h1 className="hero-title">Control your smart home with HomeSync</h1>
+                  <h1 className="hero-title">
+                    Control your smart home with HomeSync
+                  </h1>
                   <p className="hero-description">
-                    Manage all your IoT devices, customize schedules and optimize energy usage from one intuitive dashboard.
+                    Manage all your IoT devices, customize schedules and
+                    optimize energy usage from one intuitive dashboard.
                   </p>
                 </div>
                 <div className="hero-buttons">
-                  <a href="/signup" className="button tertiary-button button-lg">
+                  <a
+                    href="https://home-sync-pi.vercel.app/"
+                    className="button tertiary-button button-lg"
+                  >
                     Get Started
                   </a>
                 </div>
@@ -114,9 +154,12 @@ export default function LandingPage() {
           <div className="container">
             <div className="section-header">
               <span className="badge primary-badge">Features</span>
-              <h2 className="section-title-feature">Everything you need for your smart home</h2>
+              <h2 className="section-title-feature">
+                Everything you need for your smart home
+              </h2>
               <p className="section-description-feature">
-                HomeSync provides a complete solution for managing your smart home ecosystem.
+                HomeSync provides a complete solution for managing your smart
+                home ecosystem.
               </p>
             </div>
             <div className="features-grid">
@@ -124,42 +167,48 @@ export default function LandingPage() {
                 <Users className="feature-icon" />
                 <h3 className="feature-title">Role-Based Access Control</h3>
                 <p className="feature-description">
-                  Separate home-owner and home-dweller permissions for proper access management.
+                  Separate home-owner and home-dweller permissions for proper
+                  access management.
                 </p>
               </div>
               <div className="feature-card">
                 <Cpu className="feature-icon" />
                 <h3 className="feature-title">Device Management</h3>
                 <p className="feature-description">
-                  Easily add and control all your smart devices from a single dashboard.
+                  Easily add and control all your smart devices from a single
+                  dashboard.
                 </p>
               </div>
               <div className="feature-card">
                 <Calendar className="feature-icon" />
                 <h3 className="feature-title">Custom Scheduling</h3>
                 <p className="feature-description">
-                  Create personalized schedules for each device to automate your home.
+                  Create personalized schedules for each device to automate your
+                  home.
                 </p>
               </div>
               <div className="feature-card">
                 <SunMedium className="feature-icon" />
                 <h3 className="feature-title">Solar Integration</h3>
                 <p className="feature-description">
-                  Seamlessly integrate and optimize solar energy usage throughout your home.
+                  Seamlessly integrate and optimize solar energy usage
+                  throughout your home.
                 </p>
               </div>
               <div className="feature-card">
                 <BarChart3 className="feature-icon" />
                 <h3 className="feature-title">Energy Analytics</h3>
                 <p className="feature-description">
-                  Monitor and analyze your energy usage with comprehensive charts and insights.
+                  Monitor and analyze your energy usage with comprehensive
+                  charts and insights.
                 </p>
               </div>
               <div className="feature-card">
                 <Settings className="feature-icon" />
                 <h3 className="feature-title">Intelligent Automation</h3>
                 <p className="feature-description">
-                  Integrate with built-in sensors to automate devices for a truly smart experience.
+                  Integrate with built-in sensors to automate devices for a
+                  truly smart experience.
                 </p>
               </div>
             </div>
@@ -173,25 +222,26 @@ export default function LandingPage() {
               <span className="badge primary-badge">How It Works</span>
               <h2 className="section-title">New to Smart Home control?</h2>
               <p className="section-description">
-              Take control of your home with ease. Here is a guide on how to set up your smart home and bring everyone on board!
+                Take control of your home with ease. Here is a guide on how to
+                set up your smart home and bring everyone on board!
               </p>
             </div>
             <div className="how-it-works-grid">
-            <div className="energy-image-container">
-              <img
-                src="/images/dashboard.png"
-                width= {220}
-                height= {100}
-                alt="Room Dashboard"
-                className="energy-image"
-              />
-              <img
-                src="/images/device.png"
-                width= {220}
-                height= {100}
-                alt="Room Dashboard"
-                className="energy-image"
-              />
+              <div className="energy-image-container">
+                <img
+                  src="/images/dashboard.png"
+                  width={220}
+                  height={100}
+                  alt="Room Dashboard"
+                  className="energy-image"
+                />
+                <img
+                  src="/images/device.png"
+                  width={220}
+                  height={100}
+                  alt="Room Dashboard"
+                  className="energy-image"
+                />
               </div>
               <div className="steps-container">
                 <ol className="steps-list">
@@ -200,8 +250,9 @@ export default function LandingPage() {
                     <div className="step-content">
                       <h3 className="step-title">Set up your Account</h3>
                       <p className="step-description">
-                        Create a Home-owner account using your email and log in to your dashboard.
-                        </p>
+                        Create a Home-owner account using your email and log in
+                        to your dashboard.
+                      </p>
                     </div>
                   </li>
                   <li className="step-item">
@@ -209,8 +260,9 @@ export default function LandingPage() {
                     <div className="step-content">
                       <h3 className="step-title">Create Room</h3>
                       <p className="step-description">
-                        Organize your home by setting up rooms to easily manage connected devices.
-                        </p>
+                        Organize your home by setting up rooms to easily manage
+                        connected devices.
+                      </p>
                     </div>
                   </li>
                   <li className="step-item">
@@ -218,7 +270,8 @@ export default function LandingPage() {
                     <div className="step-content">
                       <h3 className="step-title">Add Devices</h3>
                       <p className="step-description">
-                      Connect smart devices to your home system and assign them to specific rooms.
+                        Connect smart devices to your home system and assign
+                        them to specific rooms.
                       </p>
                     </div>
                   </li>
@@ -227,7 +280,8 @@ export default function LandingPage() {
                     <div className="step-content">
                       <h3 className="step-title">Automate & Schedule</h3>
                       <p className="step-description">
-                      Create schedules and configure automation settings to optimize convenience and efficiency.
+                        Create schedules and configure automation settings to
+                        optimize convenience and efficiency.
                       </p>
                     </div>
                   </li>
@@ -236,7 +290,8 @@ export default function LandingPage() {
                     <div className="step-content">
                       <h3 className="step-title">Monitor & Optimize</h3>
                       <p className="step-description">
-                        Easily monitor the status and activity of your connected devices in real-time.
+                        Easily monitor the status and activity of your connected
+                        devices in real-time.
                       </p>
                     </div>
                   </li>
@@ -245,7 +300,8 @@ export default function LandingPage() {
                     <div className="step-content">
                       <h3 className="step-title">Invite Home Members</h3>
                       <p className="step-description">
-                      Share access by sending an invite code via email from your profile settings.
+                        Share access by sending an invite code via email from
+                        your profile settings.
                       </p>
                     </div>
                   </li>
@@ -260,48 +316,59 @@ export default function LandingPage() {
           <div className="container">
             <div className="energy-grid">
               <div className="energy-content">
-              <div className="energy-section-header">
-                <span className="badge primary-badge">Energy Management</span>
-                <h2 className="section-title">Optimize your home's energy consumption</h2>
-                <p className="section-description">
-                  HomeSync provides powerful tools to monitor, analyze, and optimize your home's energy usage. Connect
-                  your solar panels and see real-time integration with your smart devices.
-                </p>
+                <div className="energy-section-header">
+                  <span className="badge primary-badge">Energy Management</span>
+                  <h2 className="section-title">
+                    Optimize your home's energy consumption
+                  </h2>
+                  <p className="section-description">
+                    HomeSync provides powerful tools to monitor, analyze, and
+                    optimize your home's energy usage. Connect your solar panels
+                    and see real-time integration with your smart devices.
+                  </p>
                 </div>
                 <ul className="energy-features">
                   <li className="energy-feature-item">
                     <CheckCircle2 className="check-icon" />
-                    <span className="bold-text">Real-time energy consumption monitoring</span>
+                    <span className="bold-text">
+                      Real-time energy consumption monitoring
+                    </span>
                   </li>
                   <li className="energy-feature-item">
                     <CheckCircle2 className="check-icon" />
-                    <span className="bold-text">Solar energy integration and optimization</span>
+                    <span className="bold-text">
+                      Solar energy integration and optimization
+                    </span>
                   </li>
                   <li className="energy-feature-item">
                     <CheckCircle2 className="check-icon" />
-                    <span className="bold-text">Detailed analytics and usage patterns</span>
+                    <span className="bold-text">
+                      Detailed analytics and usage patterns
+                    </span>
                   </li>
                   <li className="energy-feature-item">
                     <CheckCircle2 className="check-icon" />
-                    <span className="bold-text">Download energy usage report</span>
+                    <span className="bold-text">
+                      Download energy usage report
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className="energy-image-container">
-              <img
-                src="/images/solarpanel.png"
-                width= {220}
-                height= {100}
-                alt="Solar Panel Dashboard"
-                className="energy-image"
-              />
-              <img
-                src="/images/usage.png"
-                width= {220}
-                height= {100}
-                alt="Energy Usage Dashboard"
-                className="energy-image"
-              />
+                <img
+                  src="/images/solarpanel.png"
+                  width={220}
+                  height={100}
+                  alt="Solar Panel Dashboard"
+                  className="energy-image"
+                />
+                <img
+                  src="/images/usage.png"
+                  width={220}
+                  height={100}
+                  alt="Energy Usage Dashboard"
+                  className="energy-image"
+                />
               </div>
             </div>
           </div>
@@ -313,13 +380,17 @@ export default function LandingPage() {
             <div className="hero-content">
               <h2 className="hero-title">Ready to transform your home?</h2>
               <p className="hero-description">
-                Join thousands of smart homeowners who've already upgraded their living experience with HomeSync.
+                Join thousands of smart homeowners who've already upgraded their
+                living experience with HomeSync.
               </p>
               <div className="hero-buttons">
-                <a href="/signup" className="button tertiary-button button-lg">
+                <a
+                  href="https://home-sync-pi.vercel.app/"
+                  className="button tertiary-button button-lg"
+                >
                   Get Started Now
                 </a>
-                <a href="/contact" className="button outline-button button-lg">
+                <a className="button outline-button button-lg">
                   Contact Support
                 </a>
               </div>
@@ -334,10 +405,16 @@ export default function LandingPage() {
           <div className="footer-grid">
             <div className="footer-column">
               <a href="/" className="logo-link">
-                <img src="images/logo.png" alt="HomeSync Logo" className="logo-icon" />
+                <img
+                  src="images/logo.png"
+                  alt="HomeSync Logo"
+                  className="logo-icon"
+                />
                 <span className="logo-text">HomeSync</span>
               </a>
-              <p className="footer-description">The complete solution for managing your smart home ecosystem.</p>
+              <p className="footer-description">
+                The complete solution for managing your smart home ecosystem.
+              </p>
               <div className="social-links">
                 <a href="#" className="social-link">
                   <Twitter className="social-icon" />
@@ -429,7 +506,9 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p className="copyright">&copy; {new Date().getFullYear()} HomeSync. All rights reserved.</p>
+            <p className="copyright">
+              &copy; {new Date().getFullYear()} HomeSync. All rights reserved.
+            </p>
             <div className="legal-links">
               <a href="#" className="legal-link">
                 Privacy Policy
