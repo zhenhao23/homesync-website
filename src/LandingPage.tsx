@@ -417,7 +417,7 @@ export default function LandingPage() {
             <div className="footer-column">
               <a href="/" className="logo-link">
                 <img
-                  src="images/logo.png"
+                  src={logoImage}
                   alt="HomeSync Logo"
                   className="logo-icon"
                 />
