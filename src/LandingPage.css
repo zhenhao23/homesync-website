@@ -1,77 +1,75 @@
 .hero-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-image: url('images/background.png'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  .hero-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-    z-index: 0;
-  }
-  
-  .hero-grid {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-  }
-  
-  .hero-text .badge {
-    display: inline;
-    padding: 0.5em 1em;
-    background-color: #ffb8b8;
-    color: #204160;
-    font-weight: bold;
-    border-radius: 0.25em;
-    margin-bottom: 1em;
-  }
-  
-  .hero-title {
-    font-size: 2.5rem;
-    margin-bottom: 1em;
-  }
-  
-  .hero-description {
-    font-size: 1.00rem;
-    margin-bottom: 2em;
-    color: white;
-    text-align: center; 
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .hero-buttons {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .hero-image {
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-  }
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 0;
+}
 
-  
+.hero-grid {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.hero-text .badge {
+  display: inline;
+  padding: 0.5em 1em;
+  background-color: #ffb8b8;
+  color: #204160;
+  font-weight: bold;
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+
+.hero-description {
+  font-size: 1rem;
+  margin-bottom: 2em;
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}

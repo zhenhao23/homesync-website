@@ -17,6 +17,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import "./LandingPage.css";
+import backgroundImage from "../public/images/background.png";
+import background2Image from "../public/images/background2.webp";
 
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -123,7 +125,10 @@ export default function LandingPage() {
 
       <main>
         {/* Hero Section */}
-        <section className="hero-section">
+        <section
+          className="hero-section"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
           <div className="container">
             <div className="hero-grid">
               <div className="hero-content">
@@ -375,7 +380,11 @@ export default function LandingPage() {
         </section>
 
         {/* Final CTA Section */}
-        <section id="contact" className="cta-section">
+        <section
+          id="contact"
+          className="cta-section"
+          style={{ backgroundImage: `url(${background2Image})` }}
+        >
           <div className="container">
             <div className="hero-content">
               <h2 className="hero-title">Ready to transform your home?</h2>
