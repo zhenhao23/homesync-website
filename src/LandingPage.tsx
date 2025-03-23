@@ -17,8 +17,13 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import "./LandingPage.css";
-import backgroundImage from "../public/images/background.png";
-import background2Image from "../public/images/background2.webp";
+import backgroundImage from "./images/background.png";
+import background2Image from "./images/background2.webp";
+import logoImage from "./images/logo.png";
+import dashboardImage from "./images/dashboard.png";
+import deviceImage from "./images/device.png";
+import solarPanelImage from "./images/solarpanel.png";
+import usageImage from "./images/usage.png";
 
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,11 +35,8 @@ export default function LandingPage() {
         <div className="container header-container">
           <div className="logo-container">
             <a href="/" className="logo-link">
-              <img
-                src="images/logo.png"
-                alt="HomeSync Logo"
-                className="logo-icon"
-              />
+              <img src={logoImage} alt="HomeSync Logo" className="logo-icon" />
+
               <span className="logo-text">HomeSync</span>
             </a>
           </div>
@@ -234,14 +236,14 @@ export default function LandingPage() {
             <div className="how-it-works-grid">
               <div className="energy-image-container">
                 <img
-                  src="/images/dashboard.png"
+                  src={dashboardImage}
                   width={220}
                   height={100}
                   alt="Room Dashboard"
                   className="energy-image"
                 />
                 <img
-                  src="/images/device.png"
+                  src={deviceImage}
                   width={220}
                   height={100}
                   alt="Room Dashboard"
@@ -361,14 +363,14 @@ export default function LandingPage() {
               </div>
               <div className="energy-image-container">
                 <img
-                  src="/images/solarpanel.png"
+                  src={solarPanelImage}
                   width={220}
                   height={100}
                   alt="Solar Panel Dashboard"
                   className="energy-image"
                 />
                 <img
-                  src="/images/usage.png"
+                  src={usageImage}
                   width={220}
                   height={100}
                   alt="Energy Usage Dashboard"

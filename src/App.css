@@ -655,6 +655,30 @@ section {
   gap: 1.5rem;
   align-items: center;
   padding-left: 2rem;
+  /* Add these new properties */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Add these new rules for mobile responsiveness */
+@media (max-width: 768px) {
+  .energy-image-container {
+    padding-left: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .energy-image {
+    width: 100%;
+    max-width: 260px;
+    margin-bottom: 1rem;
+  }
+
+  /* Fix padding for energy section header on mobile */
+  .energy-section-header {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 /* CTA section */
@@ -663,11 +687,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  /* background-image: url('images/background2.webp'); */
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .cta-section::after {
