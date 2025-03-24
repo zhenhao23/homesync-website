@@ -55,11 +55,14 @@ export default function LandingPage() {
           </nav>
 
           <div className="desktop-actions">
-            <a href="https://home-sync-pi.vercel.app/" className="login-link">
+            <a
+              href="https://home-sync-pi.vercel.app/signin"
+              className="login-link"
+            >
               Log in
             </a>
             <a
-              href="https://home-sync-pi.vercel.app/"
+              href="https://home-sync-pi.vercel.app/register-acc"
               className="button tertiary-button"
             >
               Sign Up
